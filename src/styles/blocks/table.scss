@@ -1,0 +1,287 @@
+.table {
+  max-height: 176px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+  border-collapse: collapse;
+  // table-layout: fixed;
+  border-spacing: 0;
+  // box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__visible--mobile {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__visible--desktop {
+    display: none;
+
+    @include onDesktop {
+      display: table-cell;
+    }
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+    height: 28px;
+  }
+
+  &__row {
+    border-bottom: 1px solid rgba(95, 120, 137, 0.16);
+    height: 36px;
+
+    &--body {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.8);
+      height: 36px;
+      text-align: center;
+
+      @include onDesktop {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__cell {
+    &--left-radius {
+      border-top-left-radius: 6px;
+    }
+
+    &--right-radius {
+      border-top-right-radius: 6px;
+    }
+
+    &--desktop {
+      display: none;
+
+      @include onDesktop {
+        display: table-cell;
+      }
+    }
+
+    &--header-group {
+      width: 56px;
+      padding-left: 12px;
+      padding-right: 108px;
+      text-align: left;
+
+      @include onDesktop {
+        width: 50px;
+        padding-right: 312px;
+      }
+    }
+
+    &--header-games {
+      width: 20px;
+      padding-right: 8px;
+
+      @include onDesktop {
+        width: 32px;
+      }
+    }
+
+    &--header-wins {
+      width: 20px;
+
+      @include onDesktop {
+        width: 24px;
+        padding-right: 4px;
+      }
+    }
+
+    &--header-draws {
+      width: 20px;
+
+      @include onDesktop {
+        width: 24px;
+        padding-right: 4px;
+      }
+    }
+
+    &--header-loses {
+      width: 20px;
+      padding-right: 8px;
+
+      @include onDesktop {
+        width: 24px;
+        padding-right: 12px;
+      }
+    }
+
+    &--header-scored {
+      width: 48px;
+      padding-right: 8px;
+
+      @include onDesktop {
+        width: 52px;
+        padding-right: 20px;
+      }
+    }
+
+    &--header-form {
+      width: 94px;
+      padding-right: 16px;
+    }
+
+    &--header-points {
+      width: 20px;
+      padding-right: 12px;
+
+      @include onDesktop {
+        width: 32px;
+        padding-right: 16px;
+      }
+    }
+
+    &--position {
+      width: 20px;
+      line-height: 20px;
+
+      padding: 0 6px 0 8px;
+
+      @include onDesktop {
+        padding: 0 8px 0 12px;
+        width: 24px;
+        line-height: 24px;
+      }
+    }
+
+    &--logo {
+      width: 24px;
+      padding-right: 6px;
+      @include onDesktop {
+        padding-right: 8px;
+      }
+    }
+
+    &--name {
+      width: 96px;
+      padding-right: 16px;
+      font-size: 12px;
+      line-height: 20px;
+      text-overflow: ellipsis;
+      text-align: left;
+
+      @include onDesktop {
+        width: 200px;
+        padding-right: 106px;
+      }
+    }
+
+    &--games {
+      width: 20px;
+      padding-right: 8px;
+
+      @include onDesktop {
+        width: 24px;
+        padding-right: 12px;
+      }
+    }
+
+    &--wins {
+      width: 20px;
+
+      @include onDesktop {
+        width: 24px;
+      }
+    }
+
+    &--draws {
+      width: 20px;
+
+      @include onDesktop {
+        width: 24px;
+      }
+    }
+
+    &--loses {
+      width: 20px;
+      padding-right: 8px;
+
+      @include onDesktop {
+        width: 24px;
+        padding-right: 12px;
+      }
+    }
+
+    &--scored {
+      width: 48px;
+      padding-right: 8px;
+
+      @include onDesktop {
+        width: 52px;
+        padding-right: 20px;
+      }
+    }
+
+    &--form {
+      width: 94px;
+      padding-right: 20px;
+    }
+
+    &--points {
+      font-weight: 700;
+      width: 20px;
+      padding-right: 12px;
+      text-align: center;
+
+      @include onDesktop {
+        width: 24px;
+      }
+    }
+  }
+
+  &__icon {
+    height: 24px;
+    width: 24px;
+
+    &--1 {
+      background-image: url(../images/team-logo/1.png);
+    }
+  }
+
+  &__form-container {
+    display: flex;
+    gap: 1px;
+  }
+
+  &__form-icon {
+    height: 18px;
+    width: 18px;
+
+    &--win {
+      background-image: url(../images/icons/win.png);
+    }
+
+    &--lose {
+      background-image: url(../images/icons/lose.png);
+    }
+
+    &--draw {
+      background-image: url(../images/icons/draw.png);
+    }
+  }
+
+  &__first-positions {
+    width: 24px;
+    height: 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 115, 210);
+    border-radius: 50%;
+
+    @include onDesktop {
+      background-color: rgb(0, 184, 108);
+    }
+  }
+}

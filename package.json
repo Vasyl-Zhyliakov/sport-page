@@ -1,0 +1,23 @@
+{
+  "name": "sportpage",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint:css": "stylelint '**/*.scss'",
+    "lint:fix": "stylelint '**/*.scss' --fix"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "sass": "^1.87.0",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-scss": "^6.11.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1"
+  }
+}

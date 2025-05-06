@@ -1,0 +1,256 @@
+.main {
+  // #region breadcrumbs style
+  &__breadcrumbs {
+    height: 44px;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+
+    @include onDesktop {
+      padding-left: 20px;
+      border-bottom: 1px solid rgb(238, 238, 238);
+      margin-bottom: 24px;
+    }
+  }
+
+  &__breadcrumbs-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__breadcrumbs-list-item {
+    font-size: 12px;
+    line-height: 100%;
+
+    &:last-child .main__breadcrumbs-link {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  &__breadcrumbs-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+
+    &--first {
+      color: rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &::after {
+        content: '';
+        background-image: url(../images/icons/next.png);
+        height: 8px;
+        width: 8px;
+        position: absolute;
+        left: calc(100% + 12px);
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+  }
+
+  //#endregion
+
+  &__container {
+    @include onDesktop {
+      display: flex;
+      margin-inline: 20px;
+      gap: 20px;
+    }
+  }
+
+  &__soccer-block {
+    @include onDesktop {
+      min-width: 740px;
+      width: calc(71%);
+    }
+  }
+
+  // #region soccer-block header style
+  &__header {
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: 4px 48px 1fr;
+    grid-template-rows: auto 36px;
+    align-items: end;
+    column-gap: 12px;
+    row-gap: 24px;
+    height: 125px;
+    border-radius: 2px;
+    margin-inline: 12px;
+    border: 1px solid rgb(238, 238, 238);
+    box-sizing: border-box;
+    margin-bottom: 32px;
+
+    @include onDesktop {
+      padding-top: 23px;
+      grid-template-columns: 0 80px 1fr;
+      grid-template-rows: 1fr 26px;
+      column-gap: 24px;
+      row-gap: 26px;
+      margin-inline: 0;
+      height: 128px;
+    }
+  }
+
+  &__header-logo {
+    background-image: url(../images/logo/soccerLogo.png);
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    @include onDesktop {
+      height: 80px;
+      width: 80px;
+      grid-row: 1/3;
+      align-self: start;
+    }
+  }
+
+  &__header-text-block {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+    @include onDesktop {
+      padding-top: 8px;
+    }
+  }
+
+  &__header-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 8px;
+
+    @include onDesktop {
+      font-family: Roboto;
+      font-size: 24px;
+      line-height: 100%;
+    }
+  }
+
+  &__header-season {
+    font-size: 12px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.38);
+  }
+
+  &__navigation {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    padding-inline: 16px;
+    border-top: 1px solid rgb(238, 238, 238);
+    overflow-x: auto;
+    height: 100%;
+    align-content: center;
+
+    @include onDesktop {
+      grid-column: 3/4;
+      padding-inline: 0;
+      border: none;
+      align-content: start;
+    }
+  }
+
+  &__navigation-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__navigation-item {
+    font-size: 12px;
+    line-height: 100%;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 22px;
+      height: 2px;
+      background-color: rgb(255, 206, 0, 1);
+      opacity: 0;
+
+      @include hover(opacity, 0.3);
+
+      @include onDesktop {
+        top: 24px;
+      }
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  // #endregion
+
+  &__navigation-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.54);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__tables-navigation {
+    margin-bottom: 16px;
+
+    @include onDesktop {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__tables-header {
+    padding-inline: 12px;
+
+    @include onDesktop {
+      padding-inline: 0;
+      padding-right: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__tables-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 9px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tables-list {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__tables-item {
+    background-color: rgba(95, 120, 137, 0.08);
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 24px;
+
+    @include hover(background-color, rgba(250, 219, 0, 1));
+  }
+
+  &__tables-link {
+    display: block;
+    padding: 4px 12px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.54);
+
+    @include hover(color, rgba(0, 0, 0, 0.9));
+  }
+}

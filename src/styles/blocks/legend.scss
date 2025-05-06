@@ -1,0 +1,167 @@
+.legend {
+  margin-inline: 12px;
+  margin-bottom: 32px;
+
+  @include onDesktop {
+    margin: 0 0 42px 32px;
+    margin-left: 32px;
+    margin-bottom: 42px;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.8);
+
+    @include onDesktop {
+      line-height: 20px;
+    }
+
+    &--mobile {
+      @include onDesktop {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @include onDesktop {
+        display: block;
+      }
+    }
+  }
+
+  &__qualifications {
+    margin-bottom: 12px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+      width: 219px;
+    }
+  }
+
+  &__qualifications-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__point {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__circle {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+
+    &--blue {
+      background-color: rgba(33, 115, 210, 1);
+    }
+
+    &--bright-blue {
+      background-color: rgba(45, 155, 219, 1);
+    }
+
+    &--orange {
+      background-color: rgba(252, 172, 31, 1);
+    }
+
+    &--red {
+      background-color: rgba(236, 106, 50, 1);
+    }
+  }
+
+  &__reductions-list {
+    display: flex;
+    column-gap: 12px;
+    flex-wrap: wrap;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__reductions-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 162px;
+    width: calc(50% - 12px * 3);
+
+    &--order {
+      order: 1;
+
+      @include onDesktop {
+        order: 0;
+      }
+    }
+
+    &--last-row {
+      align-items: baseline;
+    }
+
+    &--mobile {
+      @include onDesktop {
+        display: none;
+      }
+    }
+  }
+
+  &__abbreviation {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__form-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+
+    &--win {
+      background-image: url(../images/icons/win.png);
+    }
+
+    &--lose {
+      background-image: url(../images/icons/lose.png);
+    }
+
+    &--draw {
+      background-image: url(../images/icons/draw.png);
+    }
+  }
+}

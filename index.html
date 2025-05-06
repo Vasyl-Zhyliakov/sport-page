@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="src/images/favicon/favicon.svg"
+    />
+    <link rel="stylesheet" href="src/styles/main.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sport Page</title>
+  </head>
+  <body class="page">
+    <header class="header page__header">
+      <nav class="header__nav">
+        <div class="header__nav-left">
+          <div class="header__icon-container">
+            <a class="header__icon header__icon--menu" href="#"></a>
+          </div>
+
+          <a class="header__logo" href="#"></a>
+        </div>
+
+        <div class="header__nav-right">
+          <div class="header__matches-container">
+            <a class="header__icon header__icon--radio" href="#"></a>
+            <a class="header__matches" href="#">Матчи</a>
+          </div>
+
+          <div class="header__icon-container header__icon-container--star">
+            <a class="header__icon header__icon--star" href="#"></a>
+          </div>
+
+          <div class="header__icon-container header__icon-container--ring">
+            <a class="header__icon header__icon--ring" href="#"></a>
+          </div>
+
+          <div class="header__icon-container header__icon-container--desktop">
+            <a class="header__icon header__icon--search" href="#"></a>
+          </div>
+
+          <div class="header__icon-container header__icon-container--desktop">
+            <a class="header__icon header__icon--user" href="#">D</a>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="header__nav-down">
+        <ul class="header__nav-down-list">
+          <li class="header__nav-down-item">
+            <a
+              href="#"
+              class="header__nav-down-link header__nav-down-link--first"
+            >
+              <span class="header__nav-down-icon"></span>
+              Футбол
+            </a>
+          </li>
+
+          <li class="header__nav-down-item">
+            <a href="#" class="header__nav-down-link"> Зачет медалей </a>
+          </li>
+
+          <li class="header__nav-down-item">
+            <a href="#" class="header__nav-down-link"> Рейтинги </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <nav class="main__breadcrumbs">
+        <ul class="main__breadcrumbs-list">
+          <li class="main__breadcrumbs-list-item">
+            <a
+              href="#"
+              class="main__breadcrumbs-link main__breadcrumbs-link--first"
+              >Главная</a
+            >
+          </li>
+          <li class="main__breadcrumbs-list-item">
+            <a href="#" class="main__breadcrumbs-link">Футбол</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main__container">
+        <section class="main__soccer-block">
+          <div class="main__header">
+            <div class="main__header-logo"></div>
+            <div class="main__header-text-block">
+              <h1 class="main__header-title">Украинская Премьер-Лига</h1>
+              <p class="main__header-season">Сезон 2019/2020 32-й тур</p>
+            </div>
+
+            <nav class="main__navigation">
+              <ul class="main__navigation-list">
+                <li class="main__navigation-item">
+                  <a href="" class="main__navigation-link">Главная </a>
+                </li>
+                <li class="main__navigation-item">
+                  <a href="" class="main__navigation-link">Таблица </a>
+                </li>
+                <li class="main__navigation-item">
+                  <a href="" class="main__navigation-link">Календарь </a>
+                </li>
+                <li class="main__navigation-item">
+                  <a href="" class="main__navigation-link">Бомбардиры </a>
+                </li>
+                <li class="main__navigation-item">
+                  <a href="" class="main__navigation-link">Зрители </a>
+                </li>
+                <li class="main__navigation-item">
+                  <a href="" class="main__navigation-link">Трансферы </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="main__tables-block">
+            <div class="main__tables-header">
+              <h2 class="main__tables-title">Турнирная таблица</h2>
+              <nav class="main__tables-navigation">
+                <ul class="main__tables-list">
+                  <li class="main__tables-item">
+                    <a href="#" class="main__tables-link">Общая</a>
+                  </li>
+                  <li class="main__tables-item">
+                    <a href="#" class="main__tables-link">Дома</a>
+                  </li>
+                  <li class="main__tables-item">
+                    <a href="#" class="main__tables-link">В гостях</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="main__tables-container">
+              <table class="main__table table">
+                <thead class="table__header">
+                  <tr class="table__row table__row--header">
+                    <th
+                      colspan="3"
+                      class="table__cell table__cell--header table__cell--header-group table__cell--left-radius"
+                    >
+                      ГРУПА А
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-games"
+                    >
+                      <span class="table__visible--mobile">И</span>
+                      <span class="table__visible--desktop">Игры</span>
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-wins"
+                    >
+                      В
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-draws"
+                    >
+                      Н
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-loses"
+                    >
+                      П
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-scored"
+                    >
+                      З - П
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-form table__cell--desktop"
+                    >
+                      Форма
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-points table__cell--right-radius"
+                    >
+                      <span class="table__visible--mobile">О</span>
+                      <span class="table__visible--desktop">Очки</span>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody class="table__body">
+                  <tr class="table__row table__row--body">
+                    <td class="table__cell table__cell--position table__cell">
+                      <div class="table__first-positions">1</div>
+                    </td>
+                    <td class="table__cell table__cell--logo">
+                      <div class="table__icon table__icon--1"></div>
+                    </td>
+                    <td class="table__cell table__cell--name">Арсенал</td>
+                    <td class="table__cell table__cell--games">6</td>
+                    <td class="table__cell table__cell--wins">4</td>
+                    <td class="table__cell table__cell--draws">1</td>
+                    <td class="table__cell table__cell--loses">1</td>
+                    <td class="table__cell table__cell--scored">16 - 4</td>
+                    <td
+                      class="table__cell table__cell--form table__cell--desktop"
+                    >
+                      <div class="table__form-container">
+                        <div
+                          class="table__form-icon table__form-icon--win"
+                        ></div>
+                        <div
+                          class="table__form-icon table__form-icon--win"
+                        ></div>
+                        <div
+                          class="table__form-icon table__form-icon--win"
+                        ></div>
+                        <div
+                          class="table__form-icon table__form-icon--draw"
+                        ></div>
+                        <div
+                          class="table__form-icon table__form-icon--lose"
+                        ></div>
+                      </div>
+                    </td>
+                    <td class="table__cell table__cell--points">13</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="main__table table">
+                <thead class="table__header">
+                  <tr class="table__row table__row--header">
+                    <th
+                      class="table__cell table__cell--header table__cell--header-group table__cell--left-radius"
+                    >
+                      ГРУПА А
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-games"
+                    >
+                      <span class="table__visible--mobile">И</span>
+                      <span class="table__visible--desktop">Игры</span>
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-wins"
+                    >
+                      В
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-draws"
+                    >
+                      Н
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-loses"
+                    >
+                      П
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-scored"
+                    >
+                      З - П
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-form table__cell--desktop"
+                    >
+                      Форма
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-points table__cell--right-radius"
+                    >
+                      <span class="table__visible--mobile">О</span>
+                      <span class="table__visible--desktop">Очки</span>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody></tbody>
+              </table>
+
+              <table class="main__table table">
+                <thead class="table__header">
+                  <tr class="table__row table__row--header">
+                    <th
+                      class="table__cell table__cell--header table__cell--header-group table__cell--left-radius"
+                    >
+                      ГРУПА А
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-games"
+                    >
+                      <span class="table__visible--mobile">И</span>
+                      <span class="table__visible--desktop">Игры</span>
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-wins"
+                    >
+                      В
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-draws"
+                    >
+                      Н
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-loses"
+                    >
+                      П
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-scored"
+                    >
+                      З - П
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-form table__cell--desktop"
+                    >
+                      Форма
+                    </th>
+
+                    <th
+                      class="table__cell table__cell--header table__cell--header-points table__cell--right-radius"
+                    >
+                      <span class="table__visible--mobile">О</span>
+                      <span class="table__visible--desktop">Очки</span>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="main__tables-legend legend">
+              <div class="legend__qualifications">
+                <h3 class="legend__title">Квалификация</h3>
+                <ul class="legend__qualifications-list">
+                  <li class="legend__qualifications-item">
+                    <div class="legend__point">
+                      <div class="legend__circle legend__circle--blue"></div>
+                    </div>
+                    <p class="legend__text">Чемпионы Лига чемпионов УЕФА</p>
+                  </li>
+
+                  <li class="legend__qualifications-item">
+                    <div class="legend__point">
+                      <div
+                        class="legend__circle legend__circle--bright-blue"
+                      ></div>
+                    </div>
+                    <p class="legend__text">Лига чемпионов УЕФА</p>
+                  </li>
+
+                  <li class="legend__qualifications-item">
+                    <div class="legend__point">
+                      <div class="legend__circle legend__circle--orange"></div>
+                    </div>
+                    <p class="legend__text">Лига Европы УЕФА</p>
+                  </li>
+
+                  <li class="legend__qualifications-item">
+                    <div class="legend__point">
+                      <div class="legend__circle legend__circle--red"></div>
+                    </div>
+                    <p class="legend__text">Понижение</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="legend__reductions">
+                <h3 class="legend__title">Сокращения</h3>
+
+                <ul class="legend__reductions-list">
+                  <li
+                    class="legend__reductions-item legend__reductions-item--mobile"
+                  >
+                    <p class="legend__abbreviation">О</p>
+                    <p class="legend__text">Очки</p>
+                  </li>
+
+                  <li class="legend__reductions-item">
+                    <p class="legend__abbreviation">В</p>
+                    <p class="legend__text">Выигрыш</p>
+                  </li>
+
+                  <li
+                    class="legend__reductions-item legend__reductions-item--mobile"
+                  >
+                    <p class="legend__abbreviation">И</p>
+                    <p class="legend__text">Игры</p>
+                  </li>
+
+                  <li class="legend__reductions-item">
+                    <p class="legend__abbreviation">Н</p>
+                    <p class="legend__text">Ничья</p>
+                  </li>
+                  <li
+                    class="legend__reductions-item legend__reductions-item--order legend__reductions-item--last-row"
+                  >
+                    <p
+                      class="legend__abbreviation legend__abbreviation--mobile"
+                    >
+                      П
+                    </p>
+                    <p class="legend__text">Поражение</p>
+                  </li>
+                  <li
+                    class="legend__reductions-item legend__reductions-item--last-row"
+                  >
+                    <p
+                      class="legend__abbreviation legend__abbreviation--mobile"
+                    >
+                      З&#8209;П
+                    </p>
+                    <p class="legend__text legend__text--mobile">
+                      Забитые - пропущенные
+                    </p>
+                    <p class="legend__text legend__text--desktop">
+                      Забитые&nbsp;&#8209;&nbsp;пропущенные
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="legend__form">
+                <h3 class="legend__title">Форма</h3>
+
+                <ul class="legend__form-list">
+                  <li class="legend__form-item">
+                    <div class="legend__icon legend__icon--win"></div>
+                    <p class="legend__text legend__text">Выигрыш</p>
+                  </li>
+
+                  <li class="legend__form-item">
+                    <div class="legend__icon legend__icon--lose"></div>
+                    <p class="legend__text">Поражение</p>
+                  </li>
+
+                  <li class="legend__form-item">
+                    <div class="legend__icon legend__icon--draw"></div>
+                    <p class="legend__text">Ничья</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="main__aside aside">
+          <section class="aside__news">
+            <h3 class="aside__title">Главные новости</h3>
+
+            <ul class="aside__news-list">
+              <li class="aside__news-item">
+                <a href="#" class="aside__news-link">
+                  Артем ФРАНКОВ: «Я не сторонник перехода на систему
+                  весна-осень»
+                </a>
+              </li>
+
+              <li class="aside__news-item">
+                <a href="#" class="aside__news-link">
+                  Welcome to the team! Макгрегор поприветствовал Пакьяо в своей
+                  команде
+                </a>
+              </li>
+
+              <li class="aside__news-item">
+                <a href="#" class="aside__news-link">
+                  КАРИКАТУРА ДНЯ. Сэйв столетия от Бэнкса после удара Пеле
+                </a>
+              </li>
+
+              <li class="aside__news-item">
+                <a href="#" class="aside__news-link">
+                  Евгений Лунин стал игроком месяца в Овьедо
+                </a>
+              </li>
+
+              <li class="aside__news-item">
+                <a href="#" class="aside__news-link">
+                  Welcome to the team! Макгрегор поприветствовал Пакьяо в своей
+                  команде
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="aside__trends">
+            <h3 class="aside__title">Тренды</h3>
+            <ul class="aside__trends-list">
+              <li class="aside__trends-item">
+                <a href="#" class="aside__trends-link">Коронавирус</a>
+              </li>
+
+              <li class="aside__trends-item">
+                <a href="#" class="aside__trends-link">Трансферы лета</a>
+              </li>
+
+              <li class="aside__trends-item">
+                <a href="#" class="aside__trends-link">Рейтинг клубов</a>
+              </li>
+
+              <li class="aside__trends-item">
+                <a href="#" class="aside__trends-link">Барселона</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="aside__video">
+            <div class="aside__video-header">
+              <h3 class="aside__title aside__title--no-margin">Видео</h3>
+              <div class="aside__video-icon"></div>
+            </div>
+
+            <div class="aside__video-block-wrapper">
+              <div class="aside__video-block">
+                <div class="aside__video-block-header">
+                  <div class="aside__video-block-label">Футбол</div>
+                  <div class="aside__video-block-icon"></div>
+                </div>
+
+                <div class="aside__video-content">
+                  <a href="#" class="aside__video-link">
+                    Руслан КОСТЫШИН: «Футболисты выступили с инициативой
+                    сократить зарплаты»
+                  </a>
+
+                  <div class="aside__video-info">
+                    <p class="aside__video-date">28 октября 2020</p>
+                    <div class="aside__video-comments">
+                      <div class="aside__video-comments-icon"></div>
+                      <p class="aside__video-comments-count">999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <script type="module" src="/src/scripts/main.ts"></script>
+  </body>
+</html>
