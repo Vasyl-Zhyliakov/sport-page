@@ -1,6 +1,5 @@
 // import { Team } from '../types/team';
 // import { getTeams } from '../api/api';
-
 // const teams: Team[] = await getTeams();
 
 document.addEventListener('DOMContentLoaded', () => {
