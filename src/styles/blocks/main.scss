@@ -242,7 +242,9 @@
     font-size: 14px;
     line-height: 24px;
 
-    @include hover(background-color, rgba(250, 219, 0, 1));
+    &--active {
+      background-color: rgba(250, 219, 0);
+    }
   }
 
   &__tables-link {
@@ -251,6 +253,21 @@
     text-decoration: none;
     color: rgba(0, 0, 0, 0.54);
 
-    @include hover(color, rgba(0, 0, 0, 0.9));
+    &--active {
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+
+  &__tables-container {
+    margin-bottom: 18px;
+    display: none;
+
+    @include onDesktop {
+      margin-bottom: 26px;
+    }
+
+    &--active {
+      display: block;
+    }
   }
 }
