@@ -8,7 +8,7 @@
 
     @include onDesktop {
       padding-left: 20px;
-      border-bottom: 1px solid rgb(238, 238, 238);
+      border-bottom: 1px solid $secondary-white;
       margin-bottom: 24px;
     }
   }
@@ -30,10 +30,10 @@
 
   &__breadcrumbs-link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
+    color: $black-70;
 
     &--first {
-      color: rgba(0, 0, 0, 1);
+      color: $black;
       display: flex;
       align-items: center;
       position: relative;
@@ -80,7 +80,7 @@
     height: 125px;
     border-radius: 2px;
     margin-inline: 12px;
-    border: 1px solid rgb(238, 238, 238);
+    border: 1px solid $secondary-white;
     box-sizing: border-box;
     margin-bottom: 32px;
 
@@ -124,7 +124,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    color: rgba(0, 0, 0, 0.9);
+    color: $black-90;
     margin-bottom: 8px;
 
     @include onDesktop {
@@ -137,14 +137,14 @@
   &__header-season {
     font-size: 12px;
     line-height: 100%;
-    color: rgba(0, 0, 0, 0.38);
+    color: $black-38;
   }
 
   &__navigation {
     grid-column: 1/4;
     grid-row: 2/3;
     padding-inline: 16px;
-    border-top: 1px solid rgb(238, 238, 238);
+    border-top: 1px solid $secondary-white;
     overflow-x: auto;
     height: 100%;
     align-content: center;
@@ -174,7 +174,7 @@
       right: 0;
       top: 22px;
       height: 2px;
-      background-color: rgb(255, 206, 0, 1);
+      background-color: rgb(255, 206, 0);
       opacity: 0;
 
       @include hover(opacity, 0.3);
@@ -192,10 +192,10 @@
 
   &__navigation-link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.54);
+    color: $black-54;
 
     &:hover {
-      color: rgba(0, 0, 0, 0.7);
+      color: $black-70;
     }
   }
 
@@ -223,7 +223,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.9);
+    color: $black-90;
     margin-bottom: 9px;
 
     @include onDesktop {
@@ -237,7 +237,7 @@
   }
 
   &__tables-item {
-    background-color: rgba(95, 120, 137, 0.08);
+    background-color: $gray;
     border-radius: 6px;
     font-size: 14px;
     line-height: 24px;
@@ -251,10 +251,10 @@
     display: block;
     padding: 4px 12px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.54);
+    color: $black-54;
 
     &--active {
-      color: rgba(0, 0, 0, 0.9);
+      color: $black-90;
     }
   }
 

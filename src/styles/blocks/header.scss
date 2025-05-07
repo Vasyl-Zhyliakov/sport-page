@@ -5,7 +5,7 @@
     padding: 6px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: $black;
     box-sizing: border-box;
 
     @include onDesktop {
@@ -69,14 +69,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          color: rgb(255, 255, 255);
+          color: $white;
           height: 14px;
           width: 14px;
           background-color: rgb(255, 65, 34);
           position: absolute;
           top: 2px;
           left: 17px;
-          border: 2px solid rgb(0, 0, 0);
+          border: 2px solid $black;
           border-radius: 50%;
         }
       }
@@ -126,7 +126,7 @@
       font-size: 16px;
       line-height: 20px;
       text-decoration: none;
-      color: rgb(255, 255, 255);
+      color: $white;
 
       border-radius: 50%;
       background-color: rgb(49, 194, 107);
@@ -160,14 +160,14 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
-    color: rgb(255, 255, 255);
+    color: $white;
   }
 
   &__nav-down {
     display: none;
     height: 46px;
     padding-left: 20px;
-    border-bottom: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid $secondary-white;
 
     @include onDesktop {
       display: flex;
@@ -195,18 +195,18 @@
 
   &__nav-down-link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
+    color: $black-70;
 
     &--first {
       display: flex;
       align-items: center;
-      color: rgba(0, 0, 0, 1);
+      color: $black;
 
       &::after {
         content: '';
         height: 12px;
         width: 1px;
-        background-color: rgb(238, 238, 238);
+        background-color: $secondary-white;
         position: absolute;
         left: calc(100% + 16px);
       }

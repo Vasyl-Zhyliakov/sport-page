@@ -1,8 +1,17 @@
 # The project was created with Vite + TypeScript.
 
-- [Demo](https://Vasyl-Zhyliakov.github.io/sport-page/)
+[Demo](https://Vasyl-Zhyliakov.github.io/sport-page/)
 
-  Follow these steps to run the project locally:
+# Technologies used
+
+- HTML5
+- CSS3
+- Sass(SCSS)
+- BEM methodology
+- Typescript
+- Vite
+
+# Follow these steps to run the project locally:
 
 - Clone the repository:
   git clone https://github.com/Vasyl-Zhyliakov/sport-page.git

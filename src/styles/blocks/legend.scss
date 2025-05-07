@@ -4,8 +4,6 @@
 
   @include onDesktop {
     margin: 0 0 42px 32px;
-    margin-left: 32px;
-    margin-bottom: 42px;
     display: flex;
     gap: 40px;
   }
@@ -14,14 +12,14 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
-    color: rgba(0, 0, 0, 0.8);
+    color: $black-80;
     margin-bottom: 4px;
   }
 
   &__text {
     font-size: 12px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.8);
+    color: $black-80;
 
     @include onDesktop {
       line-height: 20px;
