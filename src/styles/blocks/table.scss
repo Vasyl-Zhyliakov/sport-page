@@ -284,6 +284,9 @@
   &__icon {
     height: 24px;
     width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     @for $number from 1 through 12 {
       &--#{$number} {
